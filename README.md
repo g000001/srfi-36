@@ -1,4 +1,4 @@
-* SRFI 36: I/O Conditions
+# SRFI 36 for CL: I/O Conditions
 - Copyright (C) Michael Sperber (2002). All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining

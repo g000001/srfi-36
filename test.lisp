@@ -1,12 +1,13 @@
-(cl:in-package :srfi-36.internal)
+(cl:in-package "https://github.com/g000001/srfi-36#internals")
 
-(def-suite srfi-36)
 
-(in-suite srfi-36)
+(def-suite* srfi-36)
+
 
 (eval-when (:compile-toplevel :load-toplevel :execute)
   (defun fintern (control-string &rest args)
     (intern (apply #'format nil control-string args))))
+
 
 (macrolet ((tst (&rest names)
              `(progn
@@ -31,4 +32,5 @@
        &i/o-no-such-file-error
        &read-error ))
 
-;;; eof
+
+;;; *EOF*
